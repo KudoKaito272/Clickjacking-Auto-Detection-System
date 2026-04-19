@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warning!!</title>
+
+    <link rel="stylesheet" href="style/redirect.css">
+</head>
+
+<body id="mode-color">
+    <div class="page">
+        <div class="frame">
+            <div class="pic">
+                <img src="images/warning.png" class="picture" alt="Warning">
+            </div>
+            <div class="text">
+                <p>Website Not Secure</p>
+            </div>
+            <div class="decription">
+                <p>Access to this website has been blocked due to detected vulnerabilities that may compromise user security.</p>
+                <p>If you believe this is an error, please check your details on CADS web extension.</p>
+            </div>
+            <div class="table">
+                <div class="list">
+                    <p>Website Domain: </p>
+                    <p>Reason: </p>
+                    <p>Security Level: </p>
+                    <p>Summary Feedback: </p>
+                    <p>Scanned by: </p>
+                </div>
+                <div class="output">
+                    <p id="url">url</p>
+                    <p id="reason">Potential risk of Clickjacking.</p>
+                    <p id="security-level">Risk</p>
+                    <p id="error-msg">Missing XFO and CSP frame-ancestor</p>
+                    <p>CADS web extension</p>
+                </div>
+            </div>
+            <div class="location-button" id="insert_here">
+                <div class="button" id="back">
+                    Back
+                </div>
+                <div class="button" id="go">
+                    Click to Continue
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© Copyright 2024 Clickjacking Auto Detection System (CADS). All Rights Reserved</p>
+    </div>
+
+    <script src="js/redirect.js"></script>
+</body>
+
+</html>
