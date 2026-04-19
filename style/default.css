@@ -1,0 +1,143 @@
+body {
+    width: 380px;
+    height: 580px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: hidden;
+    -webkit-user-select: none;
+    user-select: none;
+    transition: all .5s;
+    text-shadow: 1px 1px 1px #000000b3;
+}
+
+#wallpaper{
+    /* background-image: linear-gradient(to top, rgba(0, 0, 0)100%, rgba(0, 0, 0)100%), url('../images/purple.jpg'); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 400px;
+    background-position: 0% center;
+    overflow-y: hidden;
+}
+
+#body {
+    width: 760px;
+    height: 580px;
+    transition: all .5s;
+    display: flex;
+    overflow-y: hidden;
+}
+
+#page {
+    width: 380px;
+    height: 100%;
+    border-radius: 15px;
+    transition: all .5s;
+    overflow-y: hidden;
+}
+
+#header {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#page-title {
+    width: 80%;
+    height: 100%;
+    border-top-left-radius: 15px;
+}
+
+#page-title p {
+    font-size: 30px;
+    margin-top: 9%;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: default;
+    -webkit-user-select: none;
+    user-select: none;
+    text-shadow: 2px 2px 2px #000000b3;
+}
+
+#clock {
+    position: absolute;
+    top: 6.5%;
+    right: 35px;
+    font-size: 2em;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+.colon {
+    visibility: visible;
+    transition: visibility 0.1s;
+}
+
+#more {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 15px;
+    /* background-color: blue; */
+    filter: drop-shadow(2px 2px 2px #000000b3);
+}
+
+#more img {
+    width: 50%;
+    cursor: pointer;
+}
+
+#nav {
+    position: absolute;
+    width: 385px;
+    height: 100%;
+    margin-left: -780px;
+    transition: all .5s;
+}
+
+#nav-opt {
+    width: 70%;
+    height: 100%;
+    display: block;
+}
+
+#nav-opt a {
+    width: 100%;
+    height: 11%;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    transition: all .5s;
+    background-color: inherit;
+}
+
+#nav-opt a:hover{
+    transform: scale(1.05);
+    transition: all .5s;
+    box-shadow: 0 0 5px inherit;
+}
+
+.icon {
+    width: 45%;
+    margin-left: 15%;
+}
+
+.name {
+    width: 50%;
+    margin-left: -5%;
+    color: black;
+    font-size: 16px;
+
+}
+
+.top {
+    margin-bottom: 1%;
+    border-bottom: 1px solid black;
+}
+
+.bot {
+    margin-top: 14%;
+    border-bottom: 1px solid transparent;
+}
+
+

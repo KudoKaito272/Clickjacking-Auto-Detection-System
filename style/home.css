@@ -1,0 +1,275 @@
+
+
+.container {
+    margin-top: 2%;
+    justify-content:center; 
+    width: 100%; 
+    height: 40%; 
+    display:flex; 
+    justify-content:center; 
+    align-items: center;
+}
+
+.piechart {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .5s;
+}
+.piechart:hover {
+    transition: all .5s;
+    box-shadow: 0 0 10px white inset, 0 0 10px white;
+    text-shadow: 0 0 10px white;
+}
+#change-piechart {
+    border: 40px groove rgb(36, 254, 225);
+}
+.piechart p {
+    text-align: center;
+    font-size: 40px;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.desc {
+    width: 100%;
+    height: 40%;
+    display: block;
+}
+
+.dashboard-info {
+    width: 100%;
+    max-height: 40px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+#url, #src{
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    border-left: 1px solid;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#buttonToList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.buttonToListOption {
+    padding-left: 16%;
+    padding-right: 16%;
+    border: 1px solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+#buttonToListOption-blacklist {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-right: 1%;
+}
+
+#buttonToListOption-whitelist {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-left: 1%;
+}
+
+.buttonToListOption:hover {
+    transition: all .5s;
+    transform: scale(1.1);
+    box-shadow: 0 0 2px black;
+}
+
+.more-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.more-desc input {
+    opacity: 0;
+}
+
+.picture {
+    width: 100%;
+}
+
+.details-button{
+    margin: 7%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    border-left: 1px solid;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+#back-to-dashboard{
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#details-dashboard{
+    z-index: 1;
+    width: 380px;
+    height: 100%;
+    margin-left: -780px;
+    transition:cubic-bezier(0.2, 0, 0.2, 1.5) .7s;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+#details-dashboard::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+#back-to-dashboard{
+    width: 30%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#back-to-dashboard p{
+    margin-left: 20px;
+}
+
+
+#details-page{
+    width: 100%;
+    height: max-content;
+    display: flex;
+}
+
+.lists{
+    width: 100%;
+    height: max-content;
+    margin-bottom: 50px;
+}
+
+
+.title-details{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.the-list{
+    display: flex;
+    font-size: 14px;
+    margin-left: 40px;
+}
+
+.list-content{
+    padding: 10px;
+}
+
+.tick{
+    padding: 10px;
+}
+
+.tick img{
+    height: 14px;
+}
+
+.this-result{
+    margin-left: 40px;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.Vulnerabillity{
+    display: flex;
+    width: 100%;
+    height: 25px;
+    align-items: center;
+}
+
+.coreVulnerabillity{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.coreVulnerabillity:hover{
+    transform:  scale(1.1);
+    transition: all .5s;
+}
+
+#clickjack{
+    margin-left: 20px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#additional{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.poc-button {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20px;
+}
+
+.poc-button p {
+    cursor: pointer;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid;
+    border-radius: 15px;
+    box-shadow: 0 0 5px white;
+    transition: all .5s;
+}
+
+.poc-button p:hover {
+    transition: all .5s;
+    transform: scale(1.2);
+}

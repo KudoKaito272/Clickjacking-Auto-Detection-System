@@ -1,0 +1,136 @@
+
+
+.alertMessage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(27, 27, 27, 0.5);
+    color: aliceblue;
+}
+
+.alertBox{
+    width: 90%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    background-color: rgb( 27, 27, 27);
+    box-shadow: 0px 0px 5px white;
+}
+
+.imageLock{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageLock img{
+    width: 80%;
+    height: fit-content;
+}
+
+.askPassword{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.askBox{
+    width: 100%;
+}
+
+.titlePopup{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.para{
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.Password{
+    font-size: 12px;
+}
+
+.Password input{
+    border-style: solid;
+    border-radius: 5px;
+    border-color: white;
+    background-color: rgb( 27, 27, 27, 0.5);
+    color: white;
+}
+
+.buttonLayout{
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+}
+
+.buttonLayout a{
+    text-decoration: none transparent;
+    color: white;
+}
+
+.buttonLayout div{
+    margin-left: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 2px;
+    border: 1px outset transparent;
+    cursor: pointer;
+}
+
+.proceedButton{
+    margin-right: 10%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.cancelButton{
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb( 127, 127, 127, 0.5);
+}
+
+.alertPopupBox{
+    width: 90%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    background-color: rgb( 27, 27, 27);
+    box-shadow: 0px 0px 5px white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.popupBox{
+    width: 100%;
+}
+
+.popupBox div{
+    margin-left: 10%;
+}
+
+#messageHere{
+    margin-right: 10%;
+}
+
+.ok{
+    margin-right: 10%;
+    padding-left: 20px;
+    padding-right: 25px;
+    background-color: #800080;
+    border-radius: 4px;
+}
