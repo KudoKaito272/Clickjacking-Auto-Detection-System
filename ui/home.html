@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADS Dashboard</title>
+
+    <link rel="stylesheet" href="../style/default.css" nonce="abc123">
+    <link rel="stylesheet" href="../style/home.css" nonce="abc123">
+    <link rel="stylesheet" href="../style/notification.css" nonce="abc123">
+    <link rel="stylesheet" href="../style/loading.css" nonce="abc123">
+
+</head>
+
+<body id="wallpaper">
+    <div id="loading-screen" class="hidden"></div>
+    
+    <div id="body" class="body">
+
+        <div id="page">
+            <div id="header">
+                <div id="more">
+                    <img src="../images/more.png" class="icon" id="more-icon" alt="more">
+                </div>
+                <div id="page-title">
+                    <p>CADS</p>
+                </div>
+                <div id="clock">
+                    <span id="hours"></span><span id="colon" class="colon">:</span><span id="minutes"></span>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="piechart" id="change-piechart"><p id="status">N/A</p></div>
+            </div>
+            <div class="desc">
+                <div id="url">
+                    <p class="dashboard-info" id="copy-text">url</p>       
+                </div>
+                <div id="src">
+                    <p class="dashboard-info" id="security-level">src</p>
+                </div>
+                <div id="buttonToList">
+                    <div class="buttonToListOption" id="buttonToListOption-blacklist">Blacklist</div>
+                    <div class="buttonToListOption" id="buttonToListOption-whitelist">Whitelist</div>
+                </div>
+                
+                <div class="more-desc">
+                    <div class="details-button" id="details-button">Details</div>
+                </div>
+            </div>
+            <div id="notificationSlot"></div>
+        </div>
+
+        
+
+        <div id="nav">
+            <div id="nav-opt">
+                <a href="../ui/home.html" class="top">
+                    <div>
+                        <img src="../images/home.png" class="icon" alt="home">
+                    </div>
+                    <div class="name">
+                        <p>Home</p>
+                    </div>
+                </a>
+                <a href="../ui/dashboard.html" class="top">
+                    <div>
+                        <img src="../images/dashboard.png" class="icon" alt="dashboard">
+                    </div>
+                    <div class="name">
+                        <p>Dashboard</p>
+                    </div>
+                </a>
+                <a href="../ui/history.html" class="top">
+                    <div>
+                        <img src="../images/history.png" class="icon" alt="history">
+                    </div>
+                    <div class="name">
+                        <p>History</p>
+                    </div>
+                </a>
+                <a href="../ui/whitelist.html" class="top">
+                    <div>
+                        <img src="../images/whitelist.png" class="icon" alt="wwhitelist">
+                    </div>
+                    <div class="name">
+                        <p>Whitelist</p>
+                    </div>
+                </a>
+                <a href="../ui/blacklist.html" class="top">
+                    <div>
+                        <img src="../images/blacklist.png" class="icon" alt="blacklist">
+                    </div>
+                    <div class="name">
+                        <p>Blacklist</p>
+                    </div>
+                </a>
+                <a href="../ui/report.html" class="top">
+                    <div>
+                        <img src="../images/report.png" class="icon" alt="report">
+                    </div>
+                    <div class="name">
+                        <p>Report</p>
+                    </div>
+                </a>
+                <a href="../ui/profile.html" class="top">
+                    <div>
+                        <img src="../images/profile.png" class="icon" alt="profile">
+                    </div>
+                    <div class="name">
+                        <p>Profile</p>
+                    </div>
+                </a>
+                <a href="../ui/setting.html" class="bot">
+                    <div>
+                        <img src="../images/setting.png" class="icon" alt="setting">
+                    </div>
+                    <div class="name">
+                        <p>Setting</p>
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+        
+        <div id="details-dashboard">
+            <div id="back-to-dashboard">
+                <img src="../images/back.png" class="icon" id="icon-back" alt="back to homepage"><p>Back</p>
+            </div>
+            <div class="Vulnerabillity">
+                <div class="coreVulnerabillity" id="clickjack">Clickjacking Vulnerabillity</div>
+                <div class="coreVulnerabillity" id="additional">Additional Vulnerabillity</div>
+            </div>
+            <div id="details-page">
+                
+                <div class="lists" id="Clickjack">
+                    <!--  -->
+                    <div class="title-details">
+                        Clickjacking Vulnerabillity
+                    </div>
+                    <div class="the-list">
+                        <div class="list-content">X-Frame-Options (XFO)</div><div class="tick"><img src="../images/dm-yes.png" id="tick" alt="tick"></div>
+                    </div>
+                    <div class="the-list">
+                        <div class="list-content">(CSP) frame-ancestor</div><div class="tick"><img src="../images/dm-yes.png" id="tick" alt="tick"></div>
+                    </div>
+                    <div class="the-list">
+                        <div class="list-content">(CSP) sandbox</div><div class="tick"><img src="../images/dm-yes.png" id="tick" alt="tick"></div>
+                    </div>
+                    <div class="this-result" id="result-c">
+                        Result: N/A
+                    </div>
+
+                    <div class="testIframe" id="iframeHere">
+                        <!-- <iframe src="null"></iframe> -->
+                    </div>
+
+                    <div class="poc-button">
+                        <p id="poc">Proof of Concept </p>
+                    </div>
+                </div>
+
+                <div class="lists" id="Additional" hidden>
+                    <!--  -->
+                    <div class="title-details">
+                        XSS and Data Injection Vulnerabillity
+                    </div>
+                    <div class="the-list">
+                        <div class="list-content">(CSP) default-src</div><div class="tick"><img src="../images/dm-yes.png" id="tick" alt="tick"></div>
+                    </div>
+                    <div class="the-list">
+                        <div class="list-content">(CSP) script-src</div><div class="tick"><img src="../images/dm-yes.png" id="tick" alt="tick"></div>
+                    </div>
+                    <div class="the-list">
+                        <div class="list-content">(CSP) object-src</div><div class="tick"><img src="../images/dm-yes.png" id="tick" alt="tick"></div>
+                    </div>
+                    <div class="the-list">
+                        <div class="list-content">(CSP) trusted-types</div><div class="tick"><img src="../images/dm-yes.png" id="tick" alt="tick"></div>
+                    </div>
+                    <div class="the-list">
+                        <div class="list-content">(CSP) require-trusted-types-for</div><div class="tick"><img src="../images/dm-yes.png" id="tick" alt="tick"></div>
+                    </div>
+                    <div class="the-list">
+                        <div class="list-content">X-XSS-Protection</div><div class="tick"><img src="../images/dm-yes.png" id="tick" alt="tick"></div>
+                    </div>
+                    <div class="this-result" id="result-xss">
+                        Result: N/A
+                    </div>
+
+                    <!--  -->
+                    <div class="title-details">
+                        Prevent Data Leaks
+                    </div>
+                    <div class="the-list">
+                        <div class="list-content">(CSP) connect-src</div><div class="tick"><img src="../images/dm-yes.png" id="tick" alt="tick"></div>
+                    </div>
+                    <div class="the-list">
+                        <div class="list-content">(CSP) base-uri</div><div class="tick"><img src="../images/dm-yes.png" id="tick" alt="tick"></div>
+                    </div>
+                    <div class="the-list">
+                        <div class="list-content">(CSP) form-action</div><div class="tick"><img src="../images/dm-yes.png" id="tick" alt="tick"></div>
+                    </div>
+                    <div class="this-result" id="result-pdl">
+                        Result: N/A
+                    </div>
+                    
+                    <!--  -->
+                    <div class="title-details">
+                        Mixed Content Protection
+                    </div>
+                    <div class="the-list">
+                        <div class="list-content">(CSP) upgrade-insecure-requests</div><div class="tick"><img src="../images/dm-yes.png" id="tick" alt="tick"></div>
+                    </div>
+                    <div class="the-list">
+                        <div class="list-content">(CSP) block-all-mixed-content</div><div class="tick"><img src="../images/dm-yes.png" id="tick" alt="tick"></div>
+                    </div>
+                    <div class="this-result" id="result-mcp">
+                        Result: N/A
+                    </div>
+
+                    
+                    <!--  -->
+                    <div class="title-details">
+                        Protocol Downgrade Attacks
+                    </div>
+                    <div class="the-list">
+                        <div class="list-content">(HSTS) max-age</div><div class="tick"><img src="../images/dm-yes.png" id="tick" alt="tick"></div>
+                    </div>
+                    <div class="this-result" id="result-pda">
+                        Result: N/A
+                    </div>
+    
+                    <!--  -->
+                    <div class="title-details">
+                        Cookie Hijacking
+                    </div>
+                    <div class="the-list">
+                        <div class="list-content">(HSTS) includeSubDomains</div><div class="tick"><img src="../images/dm-yes.png" id="tick" alt="tick"></div>
+                    </div>
+                    <div class="this-result" id="result-ch">
+                        Result: N/A
+                    </div>
+    
+                    <!--  -->
+                    <div class="title-details">
+                        Man-in-the-Middle (MITM) Attacks
+                    </div>
+                    <div class="the-list">
+                        <div class="list-content">(HSTS) preload</div><div class="tick"><img src="../images/dm-yes.png" id="tick" alt="tick"></div>
+                    </div>
+                    <div class="this-result" id="result-mitm">
+                        Result: N/A
+                    </div>
+    
+                    <!--  -->
+                    <div class="title-details">
+                        MIME Sniffing
+                    </div>
+                    <div class="the-list">
+                        <div class="list-content">X-Content-Type-Options</div><div class="tick"><img src="../images/dm-yes.png" id="tick" alt="tick"></div>
+                    </div>
+                    <div class="this-result" id="result-mime">
+                        Result: N/A
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="../js/clock.js"></script>
+    <script src="../js/slide.js"></script>
+    <script src="../js/style.js"></script>
+    <script src="../js/setting.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/loading.js"></script>
+    <script src="../js/SaveToDatabase.js"></script>
+</body>
+
+</html>

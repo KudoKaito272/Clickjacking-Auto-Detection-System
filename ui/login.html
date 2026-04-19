@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+
+    <link rel="stylesheet" href="../style/login.css" nonce="abc123">
+    <link rel="stylesheet" href="../style/notification.css" nonce="abc123">
+    <link rel="stylesheet" href="../style/loading.css" nonce="abc123">
+</head>
+
+<body>
+    <div class="title">
+        <h1>Log In</h1>
+    </div>
+    <div class="message">
+        <p class="the-message">Please Log In using Account that was already been created during the installation process</p>
+    </div>
+    <form id="loginForm">
+        <div class="page" id="page">
+            <div class="container">
+                
+                <div class="list">
+                    <p>Email</p>
+                    <input type="email" name="user" id="inp-user" class="text-box" placeholder="Registered Email" required>
+                </div>
+                <div class="list">
+                    <p>Password</p>
+                    <input type="password" name="pass" id="inp-pass" class="text-box" placeholder="Registered Password" required>
+                </div>
+                <div class="list">
+                    <p>Activation Code</p>
+                    <input type="text" name="act" id="inp-act" class="text-box" placeholder="exm: AsDfGhJk" required>
+                </div>
+
+            </div>
+        </div>
+        <div class="term-and-condition">
+            <div>
+                <input type="checkbox" class="check" id="on-off" placeholder="check this"> Activate the web extension upon Log In
+            </div>
+        </div>
+        <div class="login-button">
+            <button type="submit">
+                <div class="login-now" id="login">
+                    Get OTP
+                </div>
+            </button>
+        </div>
+    </form>
+
+    
+    <div id="loading-screen" class="hidden"></div>
+
+    <script src="../js/login.js"></script>
+    <script src="../js/sendOTP.js"></script>
+    <script src="../js/loading.js"></script>
+</body>
+
+</html>

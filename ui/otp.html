@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP</title>
+</head>
+
+<link rel="stylesheet" href="../style/otp.css" nonce="abc123">
+<link rel="stylesheet" href="../style/notification.css" nonce="abc123">
+<link rel="stylesheet" href="../style/loading.css" nonce="abc123">
+
+<body>
+    <div class="title">
+        <h1>Verify Account</h1>
+    </div>
+    <div class="message">
+        <p class="the-message">Please check your email for the OTP code and use it to verify your account.</p>
+    </div>
+    <form id="login">
+        <div class="page" id="page">
+            
+            <div class="container">
+                <div class="list">
+                    <p>OTP Code</p>
+
+                    <div class="otp-box">
+                        <input type="text" name="otp" id="inp-otp-1" class="box" maxlength="1" placeholder="#" required>
+                        <input type="text" name="otp" id="inp-otp-2" class="box" maxlength="1" placeholder="#" required>
+                        <input type="text" name="otp" id="inp-otp-3" class="box" maxlength="1" placeholder="#" required>
+                        <input type="text" name="otp" id="inp-otp-4" class="box" maxlength="1" placeholder="#" required>
+                        <input type="text" name="otp" id="inp-otp-5" class="box" maxlength="1" placeholder="#" required>
+                        <input type="text" name="otp" id="inp-otp-6" class="box" maxlength="1" placeholder="#" required>
+                    </div>
+                    
+                    <div class="otp">
+                        <div class="rensend-otp" id="resend">Resend OTP</div>
+                        <div class="change-acc" id="change">Change Account</div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="login-button">
+            <button type="submit" class="login-now">
+                <div>
+                    Log In
+                </div>
+            </button>
+        </div>
+    </form>
+
+    <div id="loading-screen" class="hidden"></div>
+
+    <script src="../js/otp.js"></script>
+    <script src="../js/sendOTP.js"></script>
+    <script src="../js/loading.js"></script>
+</body>
+
+</html>

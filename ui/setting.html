@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADS Dashboard</title>
+
+    <link rel="stylesheet" href="../style/default.css" nonce="abc123">
+    <link rel="stylesheet" href="../style/setting.css" nonce="abc123">
+    <link rel="stylesheet" href="../style/notification.css" nonce="abc123">
+    <link rel="stylesheet" href="../style/loading.css" nonce="abc123">
+</head>
+
+<body id="wallpaper">
+    <div id="loading-screen" class="hidden"></div>
+
+    <div id="body" class="body">
+        <div id="page" class="setting">
+            <div id="header">
+                <div id="more">
+                    <img src="../images/more.png" id="more-icon" class="icon" alt="more">
+                </div>
+                <div id="page-title">
+                    <p>Setting</p>
+                </div>
+                <div id="clock">
+                    <span id="hours"></span><span id="colon" class="colon">:</span><span id="minutes"></span>
+                </div>
+            </div>
+
+            <div class="sliding-page">
+
+                <!-- On/Off Scanning -->
+                <p id="title">Scanning</p>
+                <div class="slide-frame">
+                    <div class="box">
+
+                        <div class="selection-box" id="on-scan">
+                            ON
+                        </div>
+                        <div class="selection-box" id="off-scan">
+                            OFF
+                        </div>
+                    
+                    </div>
+                </div>
+
+                <p id="title">Notification</p>
+                <div class="slide-frame">
+                    <div class="box">
+
+                        <div class="selection-box" id="max-noti">
+                            Maximum
+                        </div>
+                        <div class="selection-box" id="min-noti">
+                            Minimum
+                        </div>
+                    
+                    </div>
+                </div>
+                
+
+                <!-- Sensitivity -->
+                <!-- <p id="title">Sensitivity</p>
+                <div id="sensitivity">
+                    <div id="sub">
+                        <p>Safe</p>
+                        <p>Caution</p>
+                        <p>Risk</p>
+                    </div>
+
+                    <div id="setting-opt">
+                        <label class="switch">
+                            <input type="checkbox" id="sw-1">
+                            <span class="slider" id="slider-text-1">On</span>
+                        </label>
+                        <label class="switch">
+                            <input type="checkbox" id="sw-2">
+                            <span class="slider" id="slider-text-2">On</span>
+                        </label>
+                        <label class="switch">
+                            <input type="checkbox" id="sw-3">
+                            <span class="slider" id="slider-text-3">On</span>
+                        </label>
+                    </div>
+                    
+                </div> -->
+                
+                <!-- Theme -->
+                <p id="title">Theme Color Code</p>
+                <div class="slide-frame">
+                    <div id="color-option">
+                        <div id="the-option">
+                            <div>
+                                <p>Background: </p>
+                            </div>
+                            <div id="input-color">
+                                <input type="text" id="color-code-background" class="color-code" placeholder="#">
+                            </div>
+                            <div id="color-code-click-background" class="okchange">
+                                OK
+                            </div>
+                        </div>
+                        <div id="the-option">
+                            <div>
+                                <p>Button: </p>
+                            </div>
+                            <div id="input-color">
+                                <input type="text" id="color-code-button" class="color-code" placeholder="#">
+                            </div>
+                            <div id="color-code-click-button" class="okchange">
+                                OK
+                            </div>
+                        </div>
+                        <div id="the-option">
+                            <div>
+                                <p>Text: </p>
+                            </div>
+                            <div id="input-color">
+                                <input type="text" id="color-code-text" class="color-code" placeholder="#">
+                            </div>
+                            <div id="color-code-click-text" class="okchange">
+                                OK
+                            </div>
+                        </div>
+                        <div id="the-option">
+                            <div>
+                                <p>Icon: </p>
+                            </div>
+                            <div class="icon-option" id="icon-black">Black</div>
+                            <div class="icon-option" id="icon-white">White</div>
+                        </div>
+                        <div id="the-option">
+                            <div>
+                                <p>Dashboard: </p>
+                            </div>
+                            <div id="input-color">
+                                <input type="text" id="color-code-dashboard" class="color-code" placeholder="#">
+                            </div>
+                            <div id="color-code-click-dashboard" class="okchange">
+                                OK
+                            </div>
+                        </div>
+                        <div id="the-option">
+                            <div>
+                                <p>Graph: </p>
+                            </div>
+                            <div id="input-color">
+                                <input type="text" id="color-code-graph" class="color-code" placeholder="#">
+                            </div>
+                            <div id="color-code-click-graph" class="okchange">
+                                OK
+                            </div>
+                        </div>
+                        <div id="the-option">
+                            <div>
+                                <p>Redirect: </p>
+                            </div>
+                            <div class="notification-option" id="notification-black">Black</div>
+                            <div class="notification-option" id="notification-white">White</div>
+                        </div>
+                        <div id="the-option">
+                            <div>
+                                <p>Dimness: </p>
+                            </div>
+                            <div id="input-color">
+                                <input type="text" id="brightness" class="color-code" placeholder="#">
+                            </div>
+                            <div id="color-code-click-brightness" class="okchange">
+                                OK
+                            </div>
+                        </div>
+                        <div id="the-option">
+                            <div>
+                                <p>Wallpaper: </p>
+                            </div>
+                            <div id="input-image">
+                                <label for="fileInput">Select Image</label>
+                                <input type="file" id="fileInput" accept="image/*">
+                            </div>
+                            <div id="clearWallpaper">X</div>
+                        </div>
+
+                        <div class="image-container">
+                            <div id="imagePreview" class="okchange">No Image Selected</div>
+                        </div>
+                        
+                        
+                    </div>
+
+                </div>
+
+                <!-- Advances Setting -->
+                <p id="title">Advances Setting</p>
+                <div class="box-enable-disable">
+                    <div id="sub">
+                        <p>Whitelist</p>
+                        <p>Blacklist</p>
+                    </div>
+
+                    <div id="setting-opt">
+                        <label class="switch-enable-disable">
+                            <input type="checkbox" id="sw-4">
+                            <span class="slider-enable-disable" id="slider-text-4">enable</span>
+                        </label>
+                        <label class="switch-enable-disable">
+                            <input type="checkbox" id="sw-5">
+                            <span class="slider-enable-disable" id="slider-text-5">enable</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Advances Setting -->
+                <p id="title">Browse Data</p>
+                <div class="advButton"><p id="clearAll">Clear All Data</p></div>
+
+                <!-- LogOut -->
+                <div class="logoutButton"><p id="logout">Log Out</p></div>
+
+                <div id="notificationSlot"></div>
+            </div>
+        </div>
+
+        <div id="nav">
+            <div id="nav-opt">
+                <a href="../ui/home.html" class="top">
+                    <div>
+                        <img src="../images/home.png" class="icon" alt="home">
+                    </div>
+                    <div class="name">
+                        <p>Home</p>
+                    </div>
+                </a>
+                <a href="../ui/dashboard.html" class="top">
+                    <div>
+                        <img src="../images/dashboard.png" class="icon" alt="dashboard">
+                    </div>
+                    <div class="name">
+                        <p>Dashboard</p>
+                    </div>
+                </a>
+                <a href="../ui/history.html" class="top">
+                    <div>
+                        <img src="../images/history.png" class="icon" alt="history">
+                    </div>
+                    <div class="name">
+                        <p>History</p>
+                    </div>
+                </a>
+                <a href="../ui/whitelist.html" class="top">
+                    <div>
+                        <img src="../images/whitelist.png" class="icon" alt="wwhitelist">
+                    </div>
+                    <div class="name">
+                        <p>Whitelist</p>
+                    </div>
+                </a>
+                <a href="../ui/blacklist.html" class="top">
+                    <div>
+                        <img src="../images/blacklist.png" class="icon" alt="blacklist">
+                    </div>
+                    <div class="name">
+                        <p>Blacklist</p>
+                    </div>
+                </a>
+                <a href="../ui/report.html" class="top">
+                    <div>
+                        <img src="../images/report.png" class="icon" alt="report">
+                    </div>
+                    <div class="name">
+                        <p>Report</p>
+                    </div>
+                </a>
+                <a href="../ui/profile.html" class="top">
+                    <div>
+                        <img src="../images/profile.png" class="icon" alt="profile">
+                    </div>
+                    <div class="name">
+                        <p>Profile</p>
+                    </div>
+                </a>
+                <a href="../ui/setting.html" class="bot">
+                    <div>
+                        <img src="../images/setting.png" class="icon" alt="setting">
+                    </div>
+                    <div class="name">
+                        <p>Setting</p>
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/clock.js"></script>
+    <script src="../js/slide.js"></script>
+    <script src="../js/notification.js"></script>
+    <script src="../js/style.js"></script>
+    <script src="../js/setting.js"></script>
+    <script src="../js/loading.js"></script>
+</body>
+
+</html>

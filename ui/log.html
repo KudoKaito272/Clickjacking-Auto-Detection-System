@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickjacking Detection Log Report</title>
+    <link nonce="abc123" rel="stylesheet" href="../style/log.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>CADS Log Report</h1>
+        
+        <div class="filters">
+            <form class="filter-group" id="filter-now">
+                <label for="start">Date Range:</label>
+                <input name="start" title="Start Date" type="date" id="dateFrom">
+                <label for="end">to</label>
+                <input name="end" title="End Date" type="date" id="dateTo">
+
+                <label for="risk_filter">Risk Level:</label>
+                <select name="risk_filter" title="Risk Filter" id="riskFilter">
+                    <option value="--">--</option>
+                    <option value="Risky">Risky</option>
+                    <option value="Safe">Safe</option>
+                </select>
+                
+                <label for="domain">Domain:</label>
+                <select name="domain" title="Domain Filter" id="domainFilter">
+                    <option value="">--</option>
+                </select>
+
+                <button type="reset" class="clear-filters" id="clear">Clear Filters</button>
+            </form>
+        </div>
+
+    
+
+        <table id="logTable">
+            <thead>
+                <tr>
+                    <th>Timestamp</th>
+                    <th>URL</th>
+                    <th>X-Frame-Options</th>
+                    <th>Content-Security-Policy</th>
+                    <th>Risk Level</th>
+                    <th>Proof of Concept</th>
+                </tr>
+            </thead>
+            <tbody id="insert_log_table">
+                <!-- Dynamically populate the table rows from the web extension data -->
+                <tr>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="../js/log.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickjacking Detection Proof of Concept</title>
+    
+    <link rel="stylesheet" href="../style/poc.css" nonce="abc123">
+    <link rel="stylesheet" href="../style/tooltip.css" nonce="abc123">
+    
+</head>
+<body>
+    <h1>CADS Proof of Concept</h1>
+
+    <!-- Section for main reference info in table format -->
+    <div class="section reference-info">
+        <h2>Website and Header Info</h2>
+        <table>
+            <tr>
+                <th>URL</th>
+                <td id="website-url"><a class="tooltip">N/A<span class="tooltiptext">This is the tooltip text</span></a>
+                </td>
+            </tr>
+            <tr>
+                <th>Date & Time</th>
+                <td id="date-time-browsed">N/A</td>
+            </tr>
+            <tr>
+                <th>XFO Header</th>
+                <td id="xfo-header">N/A</td>
+            </tr>
+            <tr>
+                <th>CSP Header</th>
+                <td id="csp-header">N/A</td>
+            </tr>
+            <tr>
+                <th>Clickjacking Status</th>
+                <td id="clickjacking-status">N/A</td>
+            </tr>
+            <tr>
+                <th>List Status</th>
+                <td id="list-status">N/A</td>
+            </tr>
+            <tr>
+                <th>Countermeasure</th>
+                <td id="countermeasure">N/A</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Section for Raw HTTP Headers -->
+    <div class="section">
+        <h2>Full HTTP Headers</h2>
+        <pre id="http-headers">No headers detected.</pre>
+    </div>
+
+    <!-- Section for Potential iFrame Source -->
+    <div class="section">
+        <h2>Potential iFrame Source</h2>
+        <pre id="iframe-source">No iFrame detected.</pre>
+    </div>
+
+    <!-- Section for Visual iFrame Loading -->
+    <div class="section" id="iframe">
+        <h2>Visual Proof (Website Loaded in iFrame)</h2>
+        <!-- <iframe id="iframe-proof" src=""></iframe> -->
+        <!-- <div id="no-iframe-alert" class="alert" style="display: none;">This website does not allow embedding in an iframe (Clickjacking Protection Enabled).</div> -->
+        <!-- <div id="iframe-message" class="message"></div> -->
+    </div>
+
+     <!-- Print Button -->
+      <div id="print-btn">
+        <div id="button">Print or Save as PDF</button>
+      </div>
+
+    <script src="../js/poc.js"></script>
+    <script src="../js/tooltip.js"></script>
+</body>
+</html>
